@@ -35,8 +35,17 @@ header #logo::after, #reservate::after {
   position: absolute;
   content: '';
   width: 100%;
-  height: 200px;
-  background-image: linear-gradient(to bottom, transparent, #121212 90%, #090909);
+  height: 400px;
+  background-image: linear-gradient(to bottom, transparent, #121212bb 60%, #090909);
   bottom: 0;
   z-index: 2;
+}
+main::before {
+  top: 0;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(to top, transparent, #121212bb 70%, #090909 85%,  #090909);
+  z-index: -2;
 }
