@@ -4,8 +4,12 @@ body {
 
 header {
   background-color: transparent;
-  background-image: url(../../img/header-gradient.png); 
+  background-image: url(../../img/header-gradient.png), linear-gradient(to bottom, #121212, #12121212 80%, transparent); 
   background-size: contain; 
+}
+
+footer {
+  background-image: linear-gradient(to top, #121212, #12121212 80%, transparent)
 }
 
 h1, h2, a, p, .header-meet p {

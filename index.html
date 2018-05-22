@@ -67,9 +67,26 @@
     </div>
   </main>
 
+  <footer class="flex flex-justify-center flex-align-center">
+    <div class="footer-inner flex flex-justify-between">
+      <div class="learn-more"></div>
+      <div class="audio-control audio-active" id="audio-control">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <div data-audio="play" class="hidden-button" id="audio-play"></div>
+        <div data-audio="stop" class="hidden-button unhidden" id="audio-stop"></div>
+      </div>
+    </div>
+  </footer>
+
   <audio src="./assets/audio/anacondaz-pivovarov-chaos.mp3" autoplay loop preload="auto" id="audio"></audio>
+  <!-- add autoplay  -->
 
   <script src="assets/js/components/OurEvent.js"></script>
+  <script src="assets/js/components/AudioPlayer.js"></script>
   <script src="assets/js/main.js"></script>
 
 </body>
