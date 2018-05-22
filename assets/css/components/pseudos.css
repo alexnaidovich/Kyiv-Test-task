@@ -30,3 +30,7 @@ header #logo::after, #reservate::after {
   top: -50.25px;
   left: calc(50% - 55.25px);
 }
+
+section p {
+  text-align: justify;
+}

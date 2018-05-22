@@ -1,13 +1,13 @@
 const container = document.querySelector('#events-container');
 
 const drawEventHtml = (eventImg, eventName, eventDateTime) => {
-  return `<div class="event flex flex-column">
+  return `<a href="#" class="event flex flex-column">
   <img src="${eventImg}" alt="${eventName}">
   <div class="event-description">
-    <h3><a href="#">${eventName}</a></h3>
+    <h3>${eventName}</h3>
     <p>${eventDateTime}</p>
   </div>
-  </div>`
+  </a>`
 }
 
 const ourEvents = [];

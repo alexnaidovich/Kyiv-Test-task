@@ -26,8 +26,8 @@ class AutoCarousel {
   autoslide() {
     let as = setTimeout(() => {
       this.slide(this.index);
-      setTimeout(this.autoslide.apply(this), 3000);
-    }, 3000);
+      setTimeout(this.autoslide.apply(this), 4000);
+    }, 4000);
   }
 
 }

@@ -58,3 +58,7 @@ main {
   background-color: #0a040c;
   box-shadow: 0 0 15px #000;
 }
+
+.restaurant-text {
+  background-image: linear-gradient(to right, transparent, #100e11, #0f0c10);
+}

@@ -18,7 +18,7 @@ a {
   text-decoration: none;
 }
 
-header a {
+header a, section a {
   font-size: 23px;
 }
 
@@ -28,20 +28,26 @@ h1, h2 {
   text-transform: uppercase;
 }
 
+section p {
+  font-family: roboto-cond, Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  line-height: 32.3px;
+}
+
 .header-meet p, .header-meet > a {
   font-size: 27.67px;
   line-height: 37px;
   text-transform: uppercase;
 }
 
-.event a, .event p {
+.event h3, .event p {
   text-transform: uppercase;
 }
-
-.event a {
+.event h3 {
   font-size: 23px;
   line-height: 35px;
 }
 .event p {
   font-size: 18.5px;
 }
+
