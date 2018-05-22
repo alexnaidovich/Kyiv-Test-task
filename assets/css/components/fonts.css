@@ -22,7 +22,7 @@ header a {
   font-size: 23px;
 }
 
-h1 {
+h1, h2 {
   font-size: 69.17px;
   line-height: 74px;
   text-transform: uppercase;

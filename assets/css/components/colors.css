@@ -4,14 +4,15 @@ body {
 
 header {
   background-color: transparent;
-  background-image: url(../../img/header-gradient.png);  
+  background-image: url(../../img/header-gradient.png); 
+  background-size: contain; 
 }
 
 header a {
   color: #e3e3e3;
 }
 
-h1, .header-meet p, .header-meet a {
+h1, h2, .header-meet p, .header-meet a {
   color: #fff;
 }
 
@@ -36,7 +37,6 @@ h1, .header-meet p, .header-meet a {
   opacity: 0;
 }
 
-
 .carousel div:nth-child(1) {
   background-image: url(../../img/header-carousel/vip-blue.jpg);
 }
@@ -45,4 +45,10 @@ h1, .header-meet p, .header-meet a {
 }
 .carousel div:nth-child(3) {
   background-image: url(../../img/header-carousel/common.jpg);
+}
+
+main {
+  background-image: url(../../img/bg-layer.png);
+  background-size: 100%;
+  background-repeat: repeat-y;
 }
