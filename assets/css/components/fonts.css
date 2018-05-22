@@ -49,5 +49,8 @@ section p {
 }
 .event p {
   font-size: 18.5px;
+  font-family: acboucle, 'Arial Narrow', Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 25px;
 }
 
