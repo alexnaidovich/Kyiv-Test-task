@@ -1,0 +1,9 @@
+﻿@font-face {
+  font-family: acboucle;
+  src: url('../../fonts/ACBoucle.ttf') format("truetype");
+  font-weight: normal;
+}
+
+* {
+  font-family: acboucle, 'Arial Narrow', Arial, Helvetica, sans-serif;
+}
