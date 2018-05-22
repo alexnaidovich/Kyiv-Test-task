@@ -116,8 +116,8 @@ video {
 
 .restaurant-text {
   width: 640px;
-  height: 80%;
-  padding: 0 60px 0 40px;
+  min-height: 50%;
+  padding: 30px 60px 30px 40px;
   transform: translateX(-40px);
   position: relative;
   z-index: 1;
