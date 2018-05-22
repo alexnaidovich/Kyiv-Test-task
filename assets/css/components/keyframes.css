@@ -1,0 +1,24 @@
+@keyframes show-car {
+  0% {
+    left: -2000px;    
+  } 
+  1% {
+    opacity: 0;
+    left: 100vw;    
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes hide-car {
+  0% {
+    opacity: 1;
+    left: 0;
+  }
+  100% {
+    opacity: 0;
+    left: -100vw;
+  }
+}

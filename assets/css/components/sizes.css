@@ -1,0 +1,74 @@
+body {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+header {
+  height: 360px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.header-inner, .meet-wrapper, .main-wrapper {
+  width: 80%;
+  min-width: 1280px;
+  margin: 0 auto; 
+}
+
+.header-inner {
+  padding-top: 12px;
+}
+
+.header-inner nav, .header-inner ul {
+  width: 100%;
+  height: 121px;
+}
+
+header a {
+  position: relative;
+}
+
+.header-meet, .events {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.header-meet p {
+  max-width: 709px;
+  margin-bottom: 30px;
+}
+
+.header-meet p > span {
+  width: 132px;
+  height: 3px;
+  display: inline-block;
+  margin: 9px 15px;
+}
+
+.carousel {
+  height: 100vh;
+  width: 100vw;
+  max-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.carousel > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 2000px;  
+}
+.carousel div.car-active {
+  left: 0;
+  animation: show-car 1s ease-in-out;
+}
+.carousel div.car-inactive {
+  left: -2000px;
+  animation: hide-car 1s ease-in-out;
+}

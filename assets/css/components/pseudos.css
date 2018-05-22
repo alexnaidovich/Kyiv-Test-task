@@ -1,0 +1,25 @@
+body::before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+header a::after {
+  position: absolute;
+  content: url('../../img/menu-hover.png');
+  top: calc(50% - 27px);
+  left: calc(50% - 23.5px);
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+header a:hover::after {
+  opacity: 1;
+}
+
+header #logo::after, #reservate::after {
+  content: '';
+}

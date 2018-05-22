@@ -6,8 +6,48 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/components/Auto-carousel.js"></script>
 </head>
 <body>
-  
+  <header>
+    <div class="header-inner flex">
+      <nav>
+        <ul class="flex flex-justify-between flex-align-center">
+          <li><a href="#events">СОБЫТИЯ</a></li>
+          <li><a href="#menu">МЕНЮ РЕСТОРАНА</a></li>
+          <li><a href="#blog">НАШ БЛОГ</a></li>
+          <li><a href="#meet" id="logo"><img src="./assets/img/main-logo.png" alt="logo"></a></li>
+          <li><a href="#gallery">ГАЛЕРЕЯ</a></li>
+          <li><a href="#about">О КАРАОКЕ</a></li>
+          <li><a href="#contacts">КОНТАКТЫ</a></li>
+        </ul>
+      </nav>
+    </div>    
+  </header>
+
+  <div class="carousel" id="header-carousel">
+      <div class="car-item car-active" id="meet--car-item1"></div>
+      <div class="car-item" id="meet--car-item2"></div>
+      <div class="car-item" id="meet--car-item3"></div>
+    </div>
+
+  <div class="meet-wrapper">
+    <div class="header-meet flex flex-column flex-justify-center" id="meet">
+      <h1>Лучший караоке клуб страны</h1>
+      <p class="">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.<span></span> </p>
+      <a href="" id="reservate">ЗАБРОНИРОВАТЬ СТОЛ</a>      
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="main-wrapper">
+      <section class="events">
+        
+      </section>
+    </div>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+
 </body>
 </html>

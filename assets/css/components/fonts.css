@@ -4,6 +4,32 @@
   font-weight: normal;
 }
 
-* {
+@font-face {
+  font-family: roboto-cond;
+  src: url('../../fonts/RobotoCondensed-Regular.ttf') format("truetype");
+  font-weight: normal;
+}
+
+body *, * a {
   font-family: acboucle, 'Arial Narrow', Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header a {
+  font-size: 23px;
+}
+
+h1 {
+  font-size: 69.17px;
+  line-height: 74px;
+  text-transform: uppercase;
+}
+
+.header-meet p, .header-meet > a {
+  font-size: 27.67px;
+  line-height: 37px;
+  text-transform: uppercase;
 }
