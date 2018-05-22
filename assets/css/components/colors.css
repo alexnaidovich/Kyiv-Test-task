@@ -21,6 +21,10 @@ header a {
   background-color: #fcfb03;
 }
 
+.carousel, .video {
+  box-shadow: 0 50px 50px #121212 inset;
+}
+
 .carousel div {
   position: absolute;
   width: 100%;
@@ -28,6 +32,7 @@ header a {
   z-index: -2;
   background-position: center;
   background-size: 100% 100%;
+  box-shadow: 0 -150px 150px #121212 inset;
 }
 
 .carousel div.car-active {

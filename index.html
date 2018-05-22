@@ -11,12 +11,14 @@
 <body>
   <header>
     <div class="header-inner flex">
-      <nav>
+      <nav class="flex">
         <ul class="flex flex-justify-between flex-align-center">
           <li><a href="#events">СОБЫТИЯ</a></li>
           <li><a href="#menu">МЕНЮ РЕСТОРАНА</a></li>
           <li><a href="#blog">НАШ БЛОГ</a></li>
-          <li><a href="#meet" id="logo"><img src="./assets/img/main-logo.png" alt="logo"></a></li>
+        </ul>
+        <a href="#meet" id="logo"><img src="./assets/img/main-logo.png" alt="logo"></a>
+        <ul class="flex flex-justify-between flex-align-center">
           <li><a href="#gallery">ГАЛЕРЕЯ</a></li>
           <li><a href="#about">О КАРАОКЕ</a></li>
           <li><a href="#contacts">КОНТАКТЫ</a></li>
@@ -25,11 +27,13 @@
     </div>    
   </header>
 
-  <div class="carousel" id="header-carousel">
-      <div class="car-item car-active"></div>
-      <div class="car-item car-inactive"></div>
-      <div class="car-item car-inactive"></div>
-    </div>
+  <div class="carousel item-mobile" id="header-carousel">
+    <div class="car-item car-active"></div>
+    <div class="car-item car-inactive"></div>
+    <div class="car-item car-inactive"></div>    
+  </div>
+
+  <div class="video item-desktop"><video src="http://grammy.creato.tech/video/giphy.5ba8e.mp4" autoplay loop muted></video></div>
 
   <div class="meet-wrapper">
     <div class="header-meet flex flex-column flex-justify-center" id="meet">
