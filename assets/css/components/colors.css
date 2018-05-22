@@ -8,12 +8,13 @@ header {
   background-size: contain; 
 }
 
-header a {
-  color: #e3e3e3;
+h1, h2, a, p, .header-meet p {
+  color: #fff;
+  text-decoration: none;
 }
 
-h1, h2, .header-meet p, .header-meet a {
-  color: #fff;
+header a {
+  color: #e3e3e3;
 }
 
 .header-meet p > span {
@@ -51,4 +52,9 @@ main {
   background-image: url(../../img/bg-layer.png);
   background-size: 100%;
   background-repeat: repeat-y;
+}
+
+.event-description {
+  background-color: #0a040c;
+  box-shadow: 0 0 15px #000;
 }

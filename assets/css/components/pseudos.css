@@ -23,3 +23,10 @@ header a:hover::after {
 header #logo::after, #reservate::after {
   content: '';
 }
+
+.event-description::after {
+  content: url(../../img/event-sticker.png);
+  position: absolute;
+  top: -50.25px;
+  left: calc(50% - 55.25px);
+}

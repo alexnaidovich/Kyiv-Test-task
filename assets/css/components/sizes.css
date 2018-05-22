@@ -72,3 +72,23 @@ header a {
   left: -2000px;
   animation: hide-car 1s ease-in-out;
 }
+
+
+.event {
+  width: 22%;
+}
+
+.event img {
+  max-width: 100%;
+}
+.event .event-description {
+  height: 107px;
+  width: 100%;
+  text-align: center;
+  padding-top: 40px;
+  box-sizing: border-box;
+  position: relative;
+}
+.events h2 {
+  margin-bottom: 35px;
+}
