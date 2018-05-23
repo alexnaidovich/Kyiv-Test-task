@@ -64,3 +64,31 @@ main::before {
   background-image: linear-gradient(to top, transparent, #121212bb 70%, #090909 85%,  #090909);
   z-index: -2;
 }
+
+footer a::before {
+  content: url('../../img/location-arrow.png');
+  transition: .5s ease-in-out;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -25px;
+}
+footer a:hover::before {
+  transform: scale(0);
+  opacity: 0;
+  left: 0px;
+}
+footer a:after {
+  content: '+380551234567';
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  font-size: 0px;
+  width: 100%;
+  transition: .5s ease-in-out;
+  height: 0px;
+}
+footer a:hover::after {
+  font-size: 20px;
+  height: 20px;
+}
