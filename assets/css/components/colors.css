@@ -4,7 +4,7 @@ body {
 
 header {
   background-color: transparent;
-  background-image: url(../../img/header-gradient.png), linear-gradient(to bottom, #121212, #12121212 80%, transparent); 
+  background-image: linear-gradient(to bottom, #121212, #12121212 80%, transparent); 
   background-size: contain; 
 }
 
@@ -18,7 +18,11 @@ h1, h2, a, p, .header-meet p {
 }
 
 header a {
-  color: #e3e3e3;
+  color: #9c9191;
+  transition: .5s;
+}
+header a:hover {
+  color: #fff;
 }
 
 .header-meet p > span {
