@@ -1,1 +1,2 @@
 const topCarousel = new AutoCarousel('#header-carousel', 'car-active', 'car-inactive', 3);
+const gallery = new Gallery('#gallery-container', '.gallery-item', 'gallery-active', 'gallery-prev', 'gallery-next', 3);

@@ -17,11 +17,11 @@ h1, h2, a, p, .header-meet p {
   text-decoration: none;
 }
 
-header a {
+header a, footer a {
   color: #9c9191;
   transition: .5s;
 }
-header a:hover {
+header a:hover, footer a:hover {
   color: #fff;
 }
 

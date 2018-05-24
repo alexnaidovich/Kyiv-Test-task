@@ -92,3 +92,30 @@ footer a:hover::after {
   font-size: 20px;
   height: 20px;
 }
+.gallery h2::before {
+  content: url('../../img/logo-gray.png');
+  position: absolute;
+  left: calc(50% - 211px);
+  top: calc(50% - 200px);
+  z-index: 0;
+} 
+
+.gallery h2::after {
+  width: 400px;
+  content: '';
+  height: 100%;
+  background-color: #121212bb;
+  left: calc(50% - 200px);
+  top: 0;
+  z-index: -1;
+}
+
+.gallery-container::before {
+  content: '';
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border: #373121 1px solid;
+  clip-path: polygon(0 0, calc(50% - 200px) 0, calc(50% - 200px) 1px, calc(50% + 200px) 1px, calc(50% + 200px) 0, 100% 0, 100% 100%, 0 100%);
+}

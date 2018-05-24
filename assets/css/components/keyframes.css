@@ -22,3 +22,22 @@
     left: -100vw;
   }
 }
+
+@keyframes hide-right {
+  from {
+    opacity: 1;
+    transform: translateX(0px);
+  } to {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+}
+@keyframes appear-from-left {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  } to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

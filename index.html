@@ -7,6 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/components/Auto-carousel.js"></script>
+  <script src="assets/js/components/Gallery.js"></script>
 </head>
 <body>
   <header>
@@ -60,9 +61,18 @@
         <div class="restaurant-image"><img src="assets/img/header-carousel/common.jpg" alt="main hall"></div>
       </section>
 
-      <section class="gallery flex">
+  </div>    
 
+      <section class="gallery flex flex-column flex-align-center flex-justify-center">
+        <h2>галерея</h2>
+        <div class="gallery-container flex flex-align-center flex-justify-center" id="gallery-container">
+          <div class="gallery-item gallery-active"><img src="./assets/img/header-carousel/vip-blue.jpg" alt="gallery-item"></div>
+          <div class="gallery-item gallery-next"><img src="./assets/img/header-carousel/vip-red.jpg" alt="gallery-item"></div>
+          <div class="gallery-item gallery-prev"><img src="./assets/img/header-carousel/common.jpg" alt="gallery-item"></div>
+        </div>
       </section>
+
+    <div class="main-wrapper">
 
     </div>
   </main>
@@ -82,6 +92,15 @@
 
   <audio src="./assets/audio/anacondaz-pivovarov-chaos.mp3" autoplay loop preload="none" id="audio"></audio>
   <!-- add autoplay  -->
+
+  <!-- <div id="arrow">
+    <i>
+      <svg version="1.0" x="0px" y="0px" viewBox="0 0 20 6" fill="#fff" style="width: 20px;height: 6px;">
+        <rect x="0" y="2" width="19" height="2" fill="#fff"></rect>
+        <polygon fill="yellow" points="16,0 20,3 20,4 16,6 16,0"></polygon>
+      </svg>
+    </i>
+  </div> -->
 
   <script src="assets/js/components/OurEvent.js"></script>
   <script src="assets/js/components/AudioPlayer.js"></script>

@@ -44,8 +44,15 @@ header #logo {
 
 .header-meet, section {
   width: 100%;
-  height: 100vh;
   position: relative;
+}
+
+.header-meet {
+  height: 100vh;
+}
+
+section {
+  height: 140vh;
 }
 
 .header-meet p {
@@ -97,27 +104,83 @@ video {
 
 .event {
   width: 22%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-height: 427px;
+}
+.event, .event * {
+  transition: .4s ease-in-out;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.event:hover {
+  border: 1px solid #fcfb03;
+  transform: scale(1.15);
 }
 
 .event img {
   max-width: 100%;
+  max-height: 393px;
 }
 .event .event-description {
-  height: 107px;
+  min-height: 107px;
   width: 100%;
   text-align: center;
   padding-top: 40px;
   box-sizing: border-box;
   position: relative;
 }
+.event:hover .event-description {
+  min-height: 207px;
+  transform: translateY(-100px);
+}
+.event-description > p {
+  margin-bottom: 20px;
+}
 .events h2 {
   margin-bottom: 35px;
 }
-.event {
-  transition: .4s ease-in-out;
+.event .event-more {
+  height: 0px;
+  min-width: 100%;  
+  position: relative;
 }
-.event:hover {
-  transform: scale(1.15);
+.event:hover .event-more {
+  border-top: 1px solid #fcfb03;
+}
+.event .event-more p {
+  font-size: 35px;
+  line-height: 80px;
+  clip-path: polygon(0 100%, 0 0, 0 0, 0 0);
+  max-width: max-content;
+  margin: 0 auto;
+  
+}
+.event:hover .event-more p {
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);   
+  
+}
+
+.event-more span {
+  width: 20px;
+  display: block;
+  position: absolute;
+  top: 27px;
+  right: 80px;
+  opacity: 0;
+}
+.event-more:hover p {
+  transform: translateX(-25px);
+}
+.event-more:hover span:nth-child(3) {
+  animation: appear-from-left .3s ease-in-out;
+  opacity: 1;
+}
+.event-more:hover span:nth-child(2) {
+  animation: hide-right .3s ease-in-out;
+  opacity: 0;
 }
 
 .restaurant-text {
@@ -144,6 +207,50 @@ video {
   max-height: 100%;
 }
 
+.gallery .gallery-container {
+  width: 100%;
+  max-height: 60vh;
+  min-height: 600px;
+  position: relative;
+}
+  
+.gallery h2 {
+  max-height: max-content;
+  position: relative;
+  z-index: 1;
+  line-height: .8;
+  transform: translateY(50%);
+}
+
+.gallery div.gallery-item {
+  height: 80%;
+  position: absolute;
+  transition: .5s cubic-bezier(0.68, -0.35, 0.265, 1.35);
+  cursor: zoom-in;
+}
+.gallery div > img {
+  max-height: 100%;
+  opacity: .2;
+  transition: .6s ease-in-out;
+}
+.gallery div.gallery-active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.gallery div.gallery-active img {
+  opacity: 1;
+}
+.gallery div.gallery-active:hover {
+  transform: scale(1.3);
+}
+.gallery div.gallery-prev {
+  transform: translateX(calc(100% + 65px));
+  opacity: .4;
+}
+.gallery div.gallery-next {
+  transform: translateX(calc(-100% - 65px));
+  opacity: .4;
+}
 
 
 footer a {
@@ -162,4 +269,10 @@ footer a:hover {
 
 .item-mobile {
   display: none;
+}
+
+
+#arrow {
+  position: absolute;
+  bottom: 300px;
 }
